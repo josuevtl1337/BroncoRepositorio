@@ -1,6 +1,7 @@
 ﻿Module Module1
     Dim con As New OleDb.OleDbConnection
-    Public Nombre, Apellido, Telefono, Email, Deportista As String
+    Public Nombre, Apellido, Telefono, Email As String
+    Public Deportista As Boolean
     Public Trigger As Boolean
 
 
