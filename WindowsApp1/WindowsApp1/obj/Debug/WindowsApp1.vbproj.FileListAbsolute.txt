@@ -11,3 +11,5 @@ C:\Users\josue\Desktop\BroncoApp_Final\WindowsApp1\WindowsApp1\obj\Debug\Windows
 C:\Users\josue\Desktop\BroncoApp_Final\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
 C:\Users\josue\Desktop\BroncoApp_Final\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
 C:\Users\josue\Desktop\BroncoApp_Final\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.MiembrosUC.resources
+C:\Users\josue\Desktop\BroncoApp_Final\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.probando.resources
+C:\Users\josue\Desktop\BroncoApp_Final\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Modificar.resources

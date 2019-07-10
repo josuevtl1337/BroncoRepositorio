@@ -26,6 +26,9 @@ Partial Class MiembrosUC
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MiembrosUC))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.refreshBtn = New System.Windows.Forms.Button()
+        Me.ModBtn = New System.Windows.Forms.Button()
+        Me.addBtn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -57,11 +60,48 @@ Partial Class MiembrosUC
         Me.DataGridView1.Size = New System.Drawing.Size(661, 363)
         Me.DataGridView1.TabIndex = 0
         '
+        'refreshBtn
+        '
+        Me.refreshBtn.BackColor = System.Drawing.Color.Transparent
+        Me.refreshBtn.FlatAppearance.BorderSize = 0
+        Me.refreshBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.refreshBtn.Location = New System.Drawing.Point(104, 461)
+        Me.refreshBtn.Name = "refreshBtn"
+        Me.refreshBtn.Size = New System.Drawing.Size(35, 32)
+        Me.refreshBtn.TabIndex = 1
+        Me.refreshBtn.UseVisualStyleBackColor = False
+        '
+        'ModBtn
+        '
+        Me.ModBtn.BackColor = System.Drawing.Color.Transparent
+        Me.ModBtn.FlatAppearance.BorderSize = 0
+        Me.ModBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ModBtn.Location = New System.Drawing.Point(150, 461)
+        Me.ModBtn.Name = "ModBtn"
+        Me.ModBtn.Size = New System.Drawing.Size(31, 32)
+        Me.ModBtn.TabIndex = 1
+        Me.ModBtn.UseVisualStyleBackColor = False
+        '
+        'addBtn
+        '
+        Me.addBtn.BackColor = System.Drawing.Color.Transparent
+        Me.addBtn.FlatAppearance.BorderSize = 0
+        Me.addBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.addBtn.Location = New System.Drawing.Point(16, 461)
+        Me.addBtn.Name = "addBtn"
+        Me.addBtn.Size = New System.Drawing.Size(79, 32)
+        Me.addBtn.TabIndex = 1
+        Me.addBtn.UseVisualStyleBackColor = False
+        '
         'MiembrosUC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.Controls.Add(Me.ModBtn)
+        Me.Controls.Add(Me.addBtn)
+        Me.Controls.Add(Me.refreshBtn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "MiembrosUC"
         Me.Size = New System.Drawing.Size(975, 508)
@@ -71,4 +111,7 @@ Partial Class MiembrosUC
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents refreshBtn As Button
+    Friend WithEvents ModBtn As Button
+    Friend WithEvents addBtn As Button
 End Class
