@@ -1,21 +1,12 @@
 ﻿Public Class MiembrosUC
     Dim referencia As New probando()
 
-
-
-
-
     Private Sub MiembrosUC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Trigger = False
         cargardatagrid1("Cliente", DataGridView1)
-
-
+        LongitudColumnas(DataGridView1, 150, 195, 195, 150, 125, 80, 80)
     End Sub
 
-    Private Sub addBtn_Click(sender As Object, e As EventArgs) Handles addBtn.Click
-        probando.Show()
-
-    End Sub
 
     Private Sub refreshBtn_Click(sender As Object, e As EventArgs) Handles refreshBtn.Click
         cargardatagrid1("Cliente", DataGridView1)
