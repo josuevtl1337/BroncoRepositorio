@@ -102,6 +102,24 @@
     <Compile Include="SubForms\MiembrosUC.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="SubForms\InicioUC.Designer.vb">
+      <DependentUpon>InicioUC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\InicioUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubForms\PagosUC.Designer.vb">
+      <DependentUpon>PagosUC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\PagosUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubForms\RutinasUC.Designer.vb">
+      <DependentUpon>RutinasUC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\RutinasUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="SubVentanas\Modificar.Designer.vb">
       <DependentUpon>Modificar.vb</DependentUpon>
     </Compile>
@@ -124,6 +142,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\InicioUC.resx">
+      <DependentUpon>InicioUC.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\MiembrosUC.resx">
       <DependentUpon>MiembrosUC.vb</DependentUpon>

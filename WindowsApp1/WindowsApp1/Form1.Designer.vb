@@ -35,12 +35,10 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelForms = New System.Windows.Forms.Panel()
         Me.Panel_Botones = New System.Windows.Forms.Panel()
-        Me.panelito = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.PanelForms.SuspendLayout()
-        Me.Panel_Botones.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -125,13 +123,17 @@ Partial Class Form1
         '
         'title
         '
+        Me.title.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.title.AutoSize = True
-        Me.title.Font = New System.Drawing.Font("Quicksand", 29.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
-        Me.title.Location = New System.Drawing.Point(463, 9)
+        Me.title.Font = New System.Drawing.Font("Microsoft Sans Serif", 29.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.title.Location = New System.Drawing.Point(35, 14)
         Me.title.Name = "title"
-        Me.title.Size = New System.Drawing.Size(99, 43)
+        Me.title.Size = New System.Drawing.Size(107, 33)
         Me.title.TabIndex = 2
-        Me.title.Text = "Home"
+        Me.title.Text = "Default"
+        Me.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
@@ -154,19 +156,10 @@ Partial Class Form1
         'Panel_Botones
         '
         Me.Panel_Botones.BackColor = System.Drawing.Color.White
-        Me.Panel_Botones.Controls.Add(Me.panelito)
         Me.Panel_Botones.Location = New System.Drawing.Point(3, 0)
         Me.Panel_Botones.Name = "Panel_Botones"
         Me.Panel_Botones.Size = New System.Drawing.Size(958, 255)
         Me.Panel_Botones.TabIndex = 3
-        '
-        'panelito
-        '
-        Me.panelito.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.panelito.Location = New System.Drawing.Point(3, 3)
-        Me.panelito.Name = "panelito"
-        Me.panelito.Size = New System.Drawing.Size(213, 213)
-        Me.panelito.TabIndex = 2
         '
         'Form1
         '
@@ -184,7 +177,6 @@ Partial Class Form1
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.PanelForms.ResumeLayout(False)
-        Me.Panel_Botones.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -198,7 +190,6 @@ Partial Class Form1
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PanelForms As Panel
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents panelito As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel_Botones As Panel
     Friend WithEvents title As Label
