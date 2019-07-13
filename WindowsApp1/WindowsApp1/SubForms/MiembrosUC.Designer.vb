@@ -30,6 +30,7 @@ Partial Class MiembrosUC
         Me.refreshBtn = New System.Windows.Forms.Button()
         Me.ModBtn = New System.Windows.Forms.Button()
         Me.addBtn = New System.Windows.Forms.Button()
+        Me.filtroBtn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -116,10 +117,20 @@ Partial Class MiembrosUC
         Me.addBtn.TabIndex = 1
         Me.addBtn.UseVisualStyleBackColor = False
         '
+        'filtroBtn
+        '
+        Me.filtroBtn.Location = New System.Drawing.Point(262, 461)
+        Me.filtroBtn.Name = "filtroBtn"
+        Me.filtroBtn.Size = New System.Drawing.Size(75, 23)
+        Me.filtroBtn.TabIndex = 2
+        Me.filtroBtn.Text = "Filtro"
+        Me.filtroBtn.UseVisualStyleBackColor = True
+        '
         'MiembrosUC
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.filtroBtn)
         Me.Controls.Add(Me.ModBtn)
         Me.Controls.Add(Me.addBtn)
         Me.Controls.Add(Me.refreshBtn)
@@ -135,4 +146,5 @@ Partial Class MiembrosUC
     Friend WithEvents refreshBtn As Button
     Friend WithEvents ModBtn As Button
     Friend WithEvents addBtn As Button
+    Friend WithEvents filtroBtn As Button
 End Class

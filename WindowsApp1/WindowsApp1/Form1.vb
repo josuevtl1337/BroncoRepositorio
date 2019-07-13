@@ -21,6 +21,7 @@ Public Class Form1
         Me.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20))
         Me.PanelForms.Controls.Add(Inicio)
         Me.PanelForms.Controls.Add(Miembros)
+        Me.PanelForms.Controls.Add(Pagos)
         Inicio.Show()
 
 
@@ -28,7 +29,10 @@ Public Class Form1
 
     Public Sub enlace()
         Try
-            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Cande\Documents\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+            'Conexion Facu
+            'conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Cande\Documents\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+            'Conexion Josue
+            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\josue\Desktop\git\facu\BroncoRepositorio-master\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
             conexion.Open()
             estado = "conectado"
 
@@ -51,5 +55,11 @@ Public Class Form1
         Panel_Botones.Hide()
         title.Text = "Inicio"
         MostrarUserControl(Inicio)
+    End Sub
+
+    Private Sub pagosBtn_Click(sender As Object, e As EventArgs) Handles pagosBtn.Click
+        Panel_Botones.Hide()
+        title.Text = "Pagos"
+        MostrarUserControl(Pagos)
     End Sub
 End Class

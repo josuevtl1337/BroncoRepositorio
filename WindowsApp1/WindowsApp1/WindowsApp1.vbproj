@@ -120,10 +120,10 @@
     <Compile Include="SubForms\RutinasUC.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SubVentanas\Modificar.Designer.vb">
-      <DependentUpon>Modificar.vb</DependentUpon>
+    <Compile Include="SubVentanas\AgregarPago.Designer.vb">
+      <DependentUpon>AgregarPago.vb</DependentUpon>
     </Compile>
-    <Compile Include="SubVentanas\Modificar.vb">
+    <Compile Include="SubVentanas\AgregarPago.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubVentanas\probando.Designer.vb">
@@ -149,8 +149,11 @@
     <EmbeddedResource Include="SubForms\MiembrosUC.resx">
       <DependentUpon>MiembrosUC.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubVentanas\Modificar.resx">
-      <DependentUpon>Modificar.vb</DependentUpon>
+    <EmbeddedResource Include="SubForms\PagosUC.resx">
+      <DependentUpon>PagosUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubVentanas\AgregarPago.resx">
+      <DependentUpon>AgregarPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubVentanas\probando.resx">
       <DependentUpon>probando.vb</DependentUpon>

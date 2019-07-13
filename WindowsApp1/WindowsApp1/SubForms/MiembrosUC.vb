@@ -16,14 +16,13 @@
         'referencia.setNombre(Nombre)
         Trigger = True
         probando.Show()
-        MsgBox(Nombre)
 
     End Sub
 
+
+
     Private Sub DataGridView1_Click(sender As Object, e As EventArgs) Handles DataGridView1.Click
         camposRetornados()
-
-
     End Sub
 
     Public Sub camposRetornados()
@@ -32,8 +31,23 @@
         Telefono = Me.DataGridView1.CurrentRow.Cells(4).Value.ToString
         Email = Me.DataGridView1.CurrentRow.Cells(3).Value.ToString
         Deportista = Me.DataGridView1.CurrentRow.Cells(5).Value
-
     End Sub
 
+    Private Sub addBtn_Click(sender As Object, e As EventArgs) Handles addBtn.Click
+        probando.Show()
+    End Sub
 
+    Private Sub filtroBtn_Click(sender As Object, e As EventArgs) Handles filtroBtn.Click
+
+        For filas As Integer = 0 To DataGridView1.RowCount - 1
+
+            If Me.DataGridView1.Item(5, filas).Value = False Then
+                Me.DataGridView1.CurrentCell = Nothing
+                Me.DataGridView1.Rows(filas).Visible = False
+
+
+            End If
+        Next
+
+    End Sub
 End Class

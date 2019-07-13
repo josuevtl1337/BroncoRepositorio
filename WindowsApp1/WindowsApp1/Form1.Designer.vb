@@ -26,7 +26,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.pagosBtn = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -45,7 +45,7 @@ Partial Class Form1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.pagosBtn)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Panel2)
@@ -67,17 +67,17 @@ Partial Class Form1
         Me.Button4.TabIndex = 1
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button3
+        'pagosBtn
         '
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(0, 188)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(69, 63)
-        Me.Button3.TabIndex = 1
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.pagosBtn.BackgroundImage = CType(resources.GetObject("pagosBtn.BackgroundImage"), System.Drawing.Image)
+        Me.pagosBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pagosBtn.FlatAppearance.BorderSize = 0
+        Me.pagosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.pagosBtn.Location = New System.Drawing.Point(0, 188)
+        Me.pagosBtn.Name = "pagosBtn"
+        Me.pagosBtn.Size = New System.Drawing.Size(69, 63)
+        Me.pagosBtn.TabIndex = 1
+        Me.pagosBtn.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -185,7 +185,7 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents pagosBtn As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PanelForms As Panel
