@@ -126,6 +126,12 @@
     <Compile Include="SubVentanas\AgregarPago.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SubVentanas\AgregarRutina.Designer.vb">
+      <DependentUpon>AgregarRutina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubVentanas\AgregarRutina.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SubVentanas\probando.Designer.vb">
       <DependentUpon>probando.vb</DependentUpon>
     </Compile>
@@ -152,8 +158,14 @@
     <EmbeddedResource Include="SubForms\PagosUC.resx">
       <DependentUpon>PagosUC.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\RutinasUC.resx">
+      <DependentUpon>RutinasUC.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubVentanas\AgregarPago.resx">
       <DependentUpon>AgregarPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubVentanas\AgregarRutina.resx">
+      <DependentUpon>AgregarRutina.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubVentanas\probando.resx">
       <DependentUpon>probando.vb</DependentUpon>

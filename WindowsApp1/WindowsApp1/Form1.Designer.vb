@@ -25,10 +25,10 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.rutinasBtn = New System.Windows.Forms.Button()
         Me.pagosBtn = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.miembrosBtn = New System.Windows.Forms.Button()
+        Me.inicioBtn = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.title = New System.Windows.Forms.Label()
@@ -44,10 +44,10 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Controls.Add(Me.rutinasBtn)
         Me.Panel1.Controls.Add(Me.pagosBtn)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.miembrosBtn)
+        Me.Panel1.Controls.Add(Me.inicioBtn)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -55,17 +55,17 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(69, 602)
         Me.Panel1.TabIndex = 0
         '
-        'Button4
+        'rutinasBtn
         '
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(0, 252)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(69, 63)
-        Me.Button4.TabIndex = 1
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.rutinasBtn.BackgroundImage = CType(resources.GetObject("rutinasBtn.BackgroundImage"), System.Drawing.Image)
+        Me.rutinasBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.rutinasBtn.FlatAppearance.BorderSize = 0
+        Me.rutinasBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.rutinasBtn.Location = New System.Drawing.Point(0, 252)
+        Me.rutinasBtn.Name = "rutinasBtn"
+        Me.rutinasBtn.Size = New System.Drawing.Size(69, 63)
+        Me.rutinasBtn.TabIndex = 1
+        Me.rutinasBtn.UseVisualStyleBackColor = True
         '
         'pagosBtn
         '
@@ -79,29 +79,29 @@ Partial Class Form1
         Me.pagosBtn.TabIndex = 1
         Me.pagosBtn.UseVisualStyleBackColor = True
         '
-        'Button2
+        'miembrosBtn
         '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(0, 124)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(69, 63)
-        Me.Button2.TabIndex = 1
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.miembrosBtn.BackgroundImage = CType(resources.GetObject("miembrosBtn.BackgroundImage"), System.Drawing.Image)
+        Me.miembrosBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.miembrosBtn.FlatAppearance.BorderSize = 0
+        Me.miembrosBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.miembrosBtn.Location = New System.Drawing.Point(0, 124)
+        Me.miembrosBtn.Name = "miembrosBtn"
+        Me.miembrosBtn.Size = New System.Drawing.Size(69, 63)
+        Me.miembrosBtn.TabIndex = 1
+        Me.miembrosBtn.UseVisualStyleBackColor = True
         '
-        'Button1
+        'inicioBtn
         '
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(0, 60)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(69, 63)
-        Me.Button1.TabIndex = 1
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.inicioBtn.BackgroundImage = CType(resources.GetObject("inicioBtn.BackgroundImage"), System.Drawing.Image)
+        Me.inicioBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.inicioBtn.FlatAppearance.BorderSize = 0
+        Me.inicioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.inicioBtn.Location = New System.Drawing.Point(0, 60)
+        Me.inicioBtn.Name = "inicioBtn"
+        Me.inicioBtn.Size = New System.Drawing.Size(69, 63)
+        Me.inicioBtn.TabIndex = 1
+        Me.inicioBtn.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -183,10 +183,10 @@ Partial Class Form1
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents inicioBtn As Button
+    Friend WithEvents rutinasBtn As Button
     Friend WithEvents pagosBtn As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents miembrosBtn As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PanelForms As Panel
     Friend WithEvents Timer1 As Timer

@@ -21,7 +21,6 @@ C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\W
 C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
 C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
 C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.MiembrosUC.resources
-C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Modificar.resources
 C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.probando.resources
 C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
 C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
@@ -76,3 +75,8 @@ C:\Users\josue\Desktop\git\facu\BroncoRepositorio-master\WindowsApp1\WindowsApp1
 C:\Users\josue\Desktop\git\facu\BroncoRepositorio-master\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
 C:\Users\josue\Desktop\git\facu\BroncoRepositorio-master\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.PagosUC.resources
 C:\Users\josue\Desktop\git\facu\BroncoRepositorio-master\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.AgregarPago.resources
+C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.InicioUC.resources
+C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.PagosUC.resources
+C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.AgregarPago.resources
+C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.RutinasUC.resources
+C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.AgregarRutina.resources

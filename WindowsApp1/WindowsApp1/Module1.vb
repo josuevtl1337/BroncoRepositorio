@@ -50,6 +50,14 @@
 
     End Sub
 
+    Public Sub cambiaColor(btn1 As Button, btn2 As Button, btn3 As Button, btn4 As Button)
+        btn1.BackColor = Color.FromArgb(101, 194, 206)
+
+        btn2.BackColor = Color.FromArgb(74, 88, 99)
+        btn3.BackColor = Color.FromArgb(74, 88, 99)
+        btn4.BackColor = Color.FromArgb(74, 88, 99)
+    End Sub
+
 
 
 End Module
