@@ -74,7 +74,7 @@ Partial Class MiembrosUC
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(975, 375)
+        Me.DataGridView1.Size = New System.Drawing.Size(975, 435)
         Me.DataGridView1.TabIndex = 0
         '
         'refreshBtn
@@ -84,7 +84,7 @@ Partial Class MiembrosUC
         Me.refreshBtn.FlatAppearance.BorderSize = 0
         Me.refreshBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.refreshBtn.Image = CType(resources.GetObject("refreshBtn.Image"), System.Drawing.Image)
-        Me.refreshBtn.Location = New System.Drawing.Point(104, 461)
+        Me.refreshBtn.Location = New System.Drawing.Point(104, 523)
         Me.refreshBtn.Name = "refreshBtn"
         Me.refreshBtn.Size = New System.Drawing.Size(35, 32)
         Me.refreshBtn.TabIndex = 1
@@ -97,7 +97,7 @@ Partial Class MiembrosUC
         Me.ModBtn.FlatAppearance.BorderSize = 0
         Me.ModBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ModBtn.Image = CType(resources.GetObject("ModBtn.Image"), System.Drawing.Image)
-        Me.ModBtn.Location = New System.Drawing.Point(150, 461)
+        Me.ModBtn.Location = New System.Drawing.Point(150, 523)
         Me.ModBtn.Name = "ModBtn"
         Me.ModBtn.Size = New System.Drawing.Size(31, 32)
         Me.ModBtn.TabIndex = 1
@@ -111,7 +111,7 @@ Partial Class MiembrosUC
         Me.addBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.addBtn.Image = CType(resources.GetObject("addBtn.Image"), System.Drawing.Image)
-        Me.addBtn.Location = New System.Drawing.Point(18, 461)
+        Me.addBtn.Location = New System.Drawing.Point(18, 523)
         Me.addBtn.Name = "addBtn"
         Me.addBtn.Size = New System.Drawing.Size(77, 32)
         Me.addBtn.TabIndex = 1
@@ -119,11 +119,14 @@ Partial Class MiembrosUC
         '
         'filtroBtn
         '
-        Me.filtroBtn.Location = New System.Drawing.Point(262, 461)
+        Me.filtroBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.filtroBtn.FlatAppearance.BorderSize = 0
+        Me.filtroBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.filtroBtn.Image = CType(resources.GetObject("filtroBtn.Image"), System.Drawing.Image)
+        Me.filtroBtn.Location = New System.Drawing.Point(863, 523)
         Me.filtroBtn.Name = "filtroBtn"
-        Me.filtroBtn.Size = New System.Drawing.Size(75, 23)
+        Me.filtroBtn.Size = New System.Drawing.Size(94, 32)
         Me.filtroBtn.TabIndex = 2
-        Me.filtroBtn.Text = "Filtro"
         Me.filtroBtn.UseVisualStyleBackColor = True
         '
         'MiembrosUC
@@ -136,7 +139,7 @@ Partial Class MiembrosUC
         Me.Controls.Add(Me.refreshBtn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "MiembrosUC"
-        Me.Size = New System.Drawing.Size(975, 508)
+        Me.Size = New System.Drawing.Size(975, 574)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

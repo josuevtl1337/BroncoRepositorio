@@ -52,7 +52,7 @@ Partial Class Form1
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(69, 602)
+        Me.Panel1.Size = New System.Drawing.Size(69, 661)
         Me.Panel1.TabIndex = 0
         '
         'rutinasBtn
@@ -118,7 +118,7 @@ Partial Class Form1
         Me.Panel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.Panel3.Location = New System.Drawing.Point(69, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1043, 602)
+        Me.Panel3.Size = New System.Drawing.Size(1043, 653)
         Me.Panel3.TabIndex = 1
         '
         'title
@@ -150,12 +150,12 @@ Partial Class Form1
         Me.PanelForms.Controls.Add(Me.Panel_Botones)
         Me.PanelForms.Location = New System.Drawing.Point(36, 60)
         Me.PanelForms.Name = "PanelForms"
-        Me.PanelForms.Size = New System.Drawing.Size(975, 508)
+        Me.PanelForms.Size = New System.Drawing.Size(975, 574)
         Me.PanelForms.TabIndex = 0
         '
         'Panel_Botones
         '
-        Me.Panel_Botones.BackColor = System.Drawing.Color.White
+        Me.Panel_Botones.BackColor = System.Drawing.Color.Transparent
         Me.Panel_Botones.Location = New System.Drawing.Point(3, 0)
         Me.Panel_Botones.Name = "Panel_Botones"
         Me.Panel_Botones.Size = New System.Drawing.Size(958, 255)
@@ -166,7 +166,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1112, 602)
+        Me.ClientSize = New System.Drawing.Size(1112, 661)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

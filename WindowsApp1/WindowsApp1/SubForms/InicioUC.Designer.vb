@@ -24,6 +24,10 @@ Partial Class InicioUC
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InicioUC))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.mastiempo = New System.Windows.Forms.Button()
+        Me.masactivos = New System.Windows.Forms.Button()
+        Me.maspagos = New System.Windows.Forms.Button()
+        Me.masmiembros = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -38,19 +42,75 @@ Partial Class InicioUC
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.mastiempo)
+        Me.Panel1.Controls.Add(Me.masactivos)
+        Me.Panel1.Controls.Add(Me.maspagos)
+        Me.Panel1.Controls.Add(Me.masmiembros)
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(975, 224)
+        Me.Panel1.Size = New System.Drawing.Size(975, 236)
         Me.Panel1.TabIndex = 0
+        '
+        'mastiempo
+        '
+        Me.mastiempo.BackColor = System.Drawing.Color.Transparent
+        Me.mastiempo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.mastiempo.FlatAppearance.BorderSize = 0
+        Me.mastiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.mastiempo.Image = CType(resources.GetObject("mastiempo.Image"), System.Drawing.Image)
+        Me.mastiempo.Location = New System.Drawing.Point(732, 163)
+        Me.mastiempo.Name = "mastiempo"
+        Me.mastiempo.Size = New System.Drawing.Size(214, 39)
+        Me.mastiempo.TabIndex = 4
+        Me.mastiempo.UseVisualStyleBackColor = False
+        '
+        'masactivos
+        '
+        Me.masactivos.BackColor = System.Drawing.Color.Transparent
+        Me.masactivos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.masactivos.FlatAppearance.BorderSize = 0
+        Me.masactivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.masactivos.Image = CType(resources.GetObject("masactivos.Image"), System.Drawing.Image)
+        Me.masactivos.Location = New System.Drawing.Point(497, 163)
+        Me.masactivos.Name = "masactivos"
+        Me.masactivos.Size = New System.Drawing.Size(214, 39)
+        Me.masactivos.TabIndex = 4
+        Me.masactivos.UseVisualStyleBackColor = False
+        '
+        'maspagos
+        '
+        Me.maspagos.BackColor = System.Drawing.Color.Transparent
+        Me.maspagos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.maspagos.FlatAppearance.BorderSize = 0
+        Me.maspagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.maspagos.Image = CType(resources.GetObject("maspagos.Image"), System.Drawing.Image)
+        Me.maspagos.Location = New System.Drawing.Point(262, 163)
+        Me.maspagos.Name = "maspagos"
+        Me.maspagos.Size = New System.Drawing.Size(214, 39)
+        Me.maspagos.TabIndex = 4
+        Me.maspagos.UseVisualStyleBackColor = False
+        '
+        'masmiembros
+        '
+        Me.masmiembros.BackColor = System.Drawing.Color.Transparent
+        Me.masmiembros.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.masmiembros.FlatAppearance.BorderSize = 0
+        Me.masmiembros.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.masmiembros.Image = CType(resources.GetObject("masmiembros.Image"), System.Drawing.Image)
+        Me.masmiembros.Location = New System.Drawing.Point(27, 163)
+        Me.masmiembros.Name = "masmiembros"
+        Me.masmiembros.Size = New System.Drawing.Size(214, 39)
+        Me.masmiembros.TabIndex = 4
+        Me.masmiembros.UseVisualStyleBackColor = False
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(733, 28)
+        Me.PictureBox4.Location = New System.Drawing.Point(733, 34)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(214, 169)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -60,7 +120,7 @@ Partial Class InicioUC
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(498, 28)
+        Me.PictureBox3.Location = New System.Drawing.Point(498, 34)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(214, 169)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -70,7 +130,7 @@ Partial Class InicioUC
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(263, 28)
+        Me.PictureBox2.Location = New System.Drawing.Point(263, 34)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(214, 169)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -80,7 +140,7 @@ Partial Class InicioUC
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 28)
+        Me.PictureBox1.Location = New System.Drawing.Point(28, 34)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(214, 169)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -94,7 +154,7 @@ Partial Class InicioUC
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.Controls.Add(Me.Panel1)
         Me.Name = "InicioUC"
-        Me.Size = New System.Drawing.Size(975, 508)
+        Me.Size = New System.Drawing.Size(975, 574)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -110,4 +170,8 @@ Partial Class InicioUC
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents mastiempo As Button
+    Friend WithEvents masactivos As Button
+    Friend WithEvents maspagos As Button
+    Friend WithEvents masmiembros As Button
 End Class
