@@ -5,6 +5,9 @@
         Trigger = False
         cargardatagrid1("Cliente", DataGridView1)
         LongitudColumnas(DataGridView1, 150, 195, 195, 150, 125, 80, 80)
+        triggerFiltro = True
+        cantidadMiembros()
+
     End Sub
 
 
@@ -39,15 +42,44 @@
 
     Private Sub filtroBtn_Click(sender As Object, e As EventArgs) Handles filtroBtn.Click
 
+
+        If triggerFiltro = True Then
+            For filas As Integer = 0 To DataGridView1.RowCount - 1
+                
+                If Me.DataGridView1.Item(5, filas).Value = False Then
+                    Me.DataGridView1.CurrentCell = Nothing
+                    Me.DataGridView1.Rows(filas).Visible = False
+
+
+                End If
+
+            Next
+            triggerFiltro = False
+        Else
+            For filas As Integer = 0 To DataGridView1.RowCount - 1
+                If Me.DataGridView1.Item(5, filas).Value = False Or Me.DataGridView1.Item(5, filas).Value = True Then
+                    Me.DataGridView1.CurrentCell = Nothing
+                    Me.DataGridView1.Rows(filas).Visible = True
+                End If
+            Next
+            triggerFiltro = True
+
+
+        End If
+    End Sub
+
+    Public Sub cantidadMiembros()
+        Dim cont As Integer
+        cont = 0
         For filas As Integer = 0 To DataGridView1.RowCount - 1
-
-            If Me.DataGridView1.Item(5, filas).Value = False Then
-                Me.DataGridView1.CurrentCell = Nothing
-                Me.DataGridView1.Rows(filas).Visible = False
-
-
+            If Me.DataGridView1.Item(5, filas).Value = True Then
+                miembrosActivosCont = miembrosActivosCont + 1
             End If
+            cont = cont + 1
         Next
+        miembrosCont = cont
+
 
     End Sub
+
 End Class

@@ -192,5 +192,20 @@
   <ItemGroup>
     <None Include="bin\Debug\1x\iconos\Icon_Home_1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIKhelsinkiORIGINAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viksonidoeiluminacion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vikStencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vikStencilHelsinki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vikStencilHelsinkiPNG.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

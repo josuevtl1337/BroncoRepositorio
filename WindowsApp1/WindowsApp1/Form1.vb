@@ -19,9 +19,9 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         enlace()
         Me.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20))
-        Me.PanelForms.Controls.Add(Inicio)
         Me.PanelForms.Controls.Add(Miembros)
         Me.PanelForms.Controls.Add(Pagos)
+        Me.PanelForms.Controls.Add(Inicio)
         Me.PanelForms.Controls.Add(Rutinas)
         MostrarUserControl(Inicio)
         Inicio.BringToFront()
@@ -31,9 +31,10 @@ Public Class Form1
     Public Sub enlace()
         Try
             'Conexion Facu
-            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio2\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+            'conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio2\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
             'Conexion Josue
-            'conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\josue\Desktop\git\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\josue\Desktop\git donwload\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+
             conexion.Open()
             estado = "conectado"
 

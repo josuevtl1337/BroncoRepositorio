@@ -4,6 +4,8 @@
     Public Deportista As Boolean
     Public Trigger As Boolean
     Public state As String
+    Public triggerFiltro As Boolean
+    Public miembrosCont, gananciasCont, miembrosActivosCont As Integer
 
 
 

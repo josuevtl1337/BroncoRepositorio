@@ -24,5 +24,7 @@
         Form1.comando.ExecuteNonQuery()
     End Sub
 
-
+    Private Sub AgregarRutina_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        'RutinasUC.data
+    End Sub
 End Class

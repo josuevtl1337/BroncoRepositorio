@@ -29,7 +29,12 @@ Partial Class RutinasUC
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.addRutinaBtn = New System.Windows.Forms.Button()
         Me.printRutinaBtn = New System.Windows.Forms.Button()
+        Me.rutinaPB = New System.Windows.Forms.PictureBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.nombresLB = New System.Windows.Forms.ListBox()
+        Me.descripcionLB = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rutinaPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -72,7 +77,7 @@ Partial Class RutinasUC
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(850, 435)
+        Me.DataGridView1.Size = New System.Drawing.Size(816, 116)
         Me.DataGridView1.TabIndex = 2
         '
         'addRutinaBtn
@@ -100,22 +105,66 @@ Partial Class RutinasUC
         Me.printRutinaBtn.TabIndex = 4
         Me.printRutinaBtn.UseVisualStyleBackColor = True
         '
+        'rutinaPB
+        '
+        Me.rutinaPB.BackColor = System.Drawing.Color.LightCoral
+        Me.rutinaPB.Location = New System.Drawing.Point(341, 228)
+        Me.rutinaPB.Name = "rutinaPB"
+        Me.rutinaPB.Size = New System.Drawing.Size(398, 275)
+        Me.rutinaPB.TabIndex = 5
+        Me.rutinaPB.TabStop = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(459, 23)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 6
+        '
+        'nombresLB
+        '
+        Me.nombresLB.FormattingEnabled = True
+        Me.nombresLB.Location = New System.Drawing.Point(156, 228)
+        Me.nombresLB.Name = "nombresLB"
+        Me.nombresLB.Size = New System.Drawing.Size(167, 121)
+        Me.nombresLB.TabIndex = 7
+        '
+        'descripcionLB
+        '
+        Me.descripcionLB.AutoSize = True
+        Me.descripcionLB.Location = New System.Drawing.Point(746, 228)
+        Me.descripcionLB.Name = "descripcionLB"
+        Me.descripcionLB.Size = New System.Drawing.Size(39, 13)
+        Me.descripcionLB.TabIndex = 8
+        Me.descripcionLB.Text = "Label1"
+        '
         'RutinasUC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.descripcionLB)
+        Me.Controls.Add(Me.nombresLB)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.rutinaPB)
         Me.Controls.Add(Me.printRutinaBtn)
         Me.Controls.Add(Me.addRutinaBtn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "RutinasUC"
         Me.Size = New System.Drawing.Size(975, 574)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rutinaPB, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents addRutinaBtn As Button
     Friend WithEvents printRutinaBtn As Button
+    Friend WithEvents rutinaPB As PictureBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents nombresLB As ListBox
+    Friend WithEvents descripcionLB As Label
 End Class
