@@ -1,5 +1,11 @@
-﻿Public Class probando
+﻿
+Imports System.Runtime.InteropServices
+Public Class probando
 
+    <DllImport("Gdi32.dll", EntryPoint:="CreateRoundRectRgn")>
+    Private Shared Function CreateRoundRectRgn(LR As Integer, Tr As Integer, RR As Integer, Br As Integer, We As Integer, Hr As Integer) As IntPtr
+
+    End Function
 
     Public Valor As String
 
@@ -10,6 +16,8 @@
         Else
             limpiar()
         End If
+
+        Me.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20))
 
     End Sub
 
@@ -22,10 +30,11 @@
         Form1.comando.Parameters.AddWithValue("@email", emailTxtBx.Text.ToUpper)
         Form1.comando.Parameters.AddWithValue("@deportista", deportistaChkBx.Checked)
 
+
         Form1.comando.ExecuteNonQuery()
 
-
         Me.Close()
+
     End Sub
 
     Public Sub setTxtBxs()
@@ -43,14 +52,7 @@
         deportistaChkBx.Checked = False
     End Sub
 
-
-
-
-
-
-
-
-    Private Sub probando_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        'cargardatagrid1("Cliente", obj.DataGridView1)
+    Private Sub CloseBtn_Click(sender As Object, e As EventArgs) Handles closeBtn.Click
+        Me.Close()
     End Sub
 End Class

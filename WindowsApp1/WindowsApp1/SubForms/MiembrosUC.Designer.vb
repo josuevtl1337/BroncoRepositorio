@@ -25,12 +25,15 @@ Partial Class MiembrosUC
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MiembrosUC))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.refreshBtn = New System.Windows.Forms.Button()
         Me.ModBtn = New System.Windows.Forms.Button()
         Me.addBtn = New System.Windows.Forms.Button()
         Me.filtroBtn = New System.Windows.Forms.Button()
+        Me.deleteBtn = New System.Windows.Forms.Button()
+        Me.paymentBtn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,7 +51,7 @@ Partial Class MiembrosUC
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -56,6 +59,14 @@ Partial Class MiembrosUC
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.ColumnHeadersHeight = 35
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(237, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.DataGridView1.Location = New System.Drawing.Point(0, 68)
@@ -63,17 +74,18 @@ Partial Class MiembrosUC
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DataGridView1.RowTemplate.Height = 25
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(975, 435)
         Me.DataGridView1.TabIndex = 0
         '
@@ -123,16 +135,41 @@ Partial Class MiembrosUC
         Me.filtroBtn.FlatAppearance.BorderSize = 0
         Me.filtroBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.filtroBtn.Image = CType(resources.GetObject("filtroBtn.Image"), System.Drawing.Image)
-        Me.filtroBtn.Location = New System.Drawing.Point(863, 523)
+        Me.filtroBtn.Location = New System.Drawing.Point(863, 522)
         Me.filtroBtn.Name = "filtroBtn"
         Me.filtroBtn.Size = New System.Drawing.Size(94, 32)
         Me.filtroBtn.TabIndex = 2
         Me.filtroBtn.UseVisualStyleBackColor = True
         '
+        'deleteBtn
+        '
+        Me.deleteBtn.BackColor = System.Drawing.Color.Transparent
+        Me.deleteBtn.FlatAppearance.BorderSize = 0
+        Me.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.deleteBtn.Image = CType(resources.GetObject("deleteBtn.Image"), System.Drawing.Image)
+        Me.deleteBtn.Location = New System.Drawing.Point(191, 522)
+        Me.deleteBtn.Name = "deleteBtn"
+        Me.deleteBtn.Size = New System.Drawing.Size(39, 34)
+        Me.deleteBtn.TabIndex = 3
+        Me.deleteBtn.UseVisualStyleBackColor = False
+        '
+        'paymentBtn
+        '
+        Me.paymentBtn.FlatAppearance.BorderSize = 0
+        Me.paymentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.paymentBtn.Image = CType(resources.GetObject("paymentBtn.Image"), System.Drawing.Image)
+        Me.paymentBtn.Location = New System.Drawing.Point(437, 519)
+        Me.paymentBtn.Name = "paymentBtn"
+        Me.paymentBtn.Size = New System.Drawing.Size(101, 35)
+        Me.paymentBtn.TabIndex = 4
+        Me.paymentBtn.UseVisualStyleBackColor = True
+        '
         'MiembrosUC
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
+        Me.Controls.Add(Me.paymentBtn)
+        Me.Controls.Add(Me.deleteBtn)
         Me.Controls.Add(Me.filtroBtn)
         Me.Controls.Add(Me.ModBtn)
         Me.Controls.Add(Me.addBtn)
@@ -150,4 +187,6 @@ Partial Class MiembrosUC
     Friend WithEvents ModBtn As Button
     Friend WithEvents addBtn As Button
     Friend WithEvents filtroBtn As Button
+    Friend WithEvents deleteBtn As Button
+    Friend WithEvents paymentBtn As Button
 End Class

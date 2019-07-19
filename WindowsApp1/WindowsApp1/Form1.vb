@@ -25,15 +25,17 @@ Public Class Form1
         Me.PanelForms.Controls.Add(Rutinas)
         MostrarUserControl(Inicio)
         Inicio.BringToFront()
+        cambiaColor(inicioBtn, miembrosBtn, pagosBtn, rutinasBtn)
+        title.Text = "Inicio"
 
     End Sub
 
     Public Sub enlace()
         Try
             'Conexion Facu
-            'conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio2\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+            'conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
             'Conexion Josue
-            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\josue\Desktop\git donwload\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
+            conexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\josue\Desktop\git donwload\BroncoRepositorio-master\WindowsApp1\WindowsApp1\bin\Debug\DB.accdb"
 
             conexion.Open()
             estado = "conectado"
@@ -53,28 +55,32 @@ Public Class Form1
         Panel_Botones.Hide()
         title.Text = "Inicio"
         MostrarUserControl(Inicio)
-        cambiaColor(inicioBtn, miembrosBtn, pagosBtn, rutinasBtn)
+        'cambiaColor(inicioBtn, miembrosBtn, pagosBtn, rutinasBtn)
+        CambiarColorTest(inicioBtn)
     End Sub
 
     Private Sub miembrosBtn_Click(sender As Object, e As EventArgs) Handles miembrosBtn.Click
         Panel_Botones.Hide()
         title.Text = "Miembros"
         MostrarUserControl(Miembros)
-        cambiaColor(miembrosBtn, inicioBtn, pagosBtn, rutinasBtn)
+        'cambiaColor(miembrosBtn, inicioBtn, pagosBtn, rutinasBtn)
+        CambiarColorTest(miembrosBtn)
     End Sub
 
     Private Sub pagosBtn_Click(sender As Object, e As EventArgs) Handles pagosBtn.Click
         Panel_Botones.Hide()
         title.Text = "Pagos"
         MostrarUserControl(Pagos)
-        cambiaColor(pagosBtn, inicioBtn, miembrosBtn, rutinasBtn)
+        'cambiaColor(pagosBtn, inicioBtn, miembrosBtn, rutinasBtn)
+        CambiarColorTest(pagosBtn)
     End Sub
 
     Private Sub rutinasBtn_Click(sender As Object, e As EventArgs) Handles rutinasBtn.Click
         Panel_Botones.Hide()
         title.Text = "Rutinas"
         MostrarUserControl(Rutinas)
-        cambiaColor(rutinasBtn, inicioBtn, miembrosBtn, pagosBtn)
+        'cambiaColor(rutinasBtn, inicioBtn, miembrosBtn, pagosBtn)
+        CambiarColorTest(rutinasBtn)
     End Sub
 
 

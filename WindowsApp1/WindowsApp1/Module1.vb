@@ -21,6 +21,8 @@
         dgview.DataSource = registros.Tables(tabla)
     End Sub
 
+
+    'LongitudColumnas es una herramienta que nos facilita fijar el ancho de las columnas con los datos en pantalla.
     Public Sub LongitudColumnas(dgview As DataGridView, ParamArray longitudes() As Object)
         Dim i As Integer
 
@@ -33,6 +35,7 @@
 
     End Sub
 
+    'El método MostrarUserControl toma como parámetro una pestaña, muestra la seleccionada, mientras que oculta cualquier otra que sea visible
     Public Sub MostrarUserControl(uc As UserControl)
         Dim i As Integer
         Dim Inicio = Form1.Inicio
@@ -52,12 +55,29 @@
 
     End Sub
 
+
     Public Sub cambiaColor(btn1 As Button, btn2 As Button, btn3 As Button, btn4 As Button)
         btn1.BackColor = Color.FromArgb(101, 194, 206)
         btn2.BackColor = Color.FromArgb(74, 88, 99)
         btn3.BackColor = Color.FromArgb(74, 88, 99)
         btn4.BackColor = Color.FromArgb(74, 88, 99)
     End Sub
+
+    Public Sub CambiarColorTest(btn As Button)
+        Dim i As Integer
+        Dim ButtonList = New Button(3) {Form1.inicioBtn, Form1.miembrosBtn, Form1.pagosBtn, Form1.rutinasBtn}
+
+        While i < 4
+            If btn.Equals(ButtonList(i)) Then
+                ButtonList(i).BackColor = Color.FromArgb(101, 194, 206)
+            Else
+                ButtonList(i).BackColor = Color.FromArgb(74, 88, 99)
+            End If
+            i = i + 1
+        End While
+
+    End Sub
+
 
 
 

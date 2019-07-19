@@ -112,13 +112,15 @@ Partial Class Form1
         '
         'Panel3
         '
+        Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel3.Controls.Add(Me.title)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Controls.Add(Me.PanelForms)
         Me.Panel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(99, Byte), Integer))
         Me.Panel3.Location = New System.Drawing.Point(69, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1043, 653)
+        Me.Panel3.Size = New System.Drawing.Size(1043, 661)
         Me.Panel3.TabIndex = 1
         '
         'title
@@ -127,10 +129,11 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.title.AutoSize = True
-        Me.title.Font = New System.Drawing.Font("Microsoft Sans Serif", 29.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
-        Me.title.Location = New System.Drawing.Point(35, 14)
+        Me.title.BackColor = System.Drawing.Color.Transparent
+        Me.title.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.title.Location = New System.Drawing.Point(27, 10)
         Me.title.Name = "title"
-        Me.title.Size = New System.Drawing.Size(107, 33)
+        Me.title.Size = New System.Drawing.Size(109, 40)
         Me.title.TabIndex = 2
         Me.title.Text = "Default"
         Me.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -138,6 +141,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(958, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)

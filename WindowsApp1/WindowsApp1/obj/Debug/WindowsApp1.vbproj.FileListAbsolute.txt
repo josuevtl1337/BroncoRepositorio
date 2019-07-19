@@ -31,11 +31,9 @@ C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsA
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
-C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.MiembrosUC.resources
-C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Modificar.resources
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.probando.resources
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
 C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
@@ -137,3 +135,9 @@ C:\Users\josue\Desktop\git donwload\BroncoRepositorio\WindowsApp1\WindowsApp1\ob
 C:\Users\josue\Desktop\git donwload\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
 C:\Users\josue\Desktop\git donwload\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
 C:\Users\josue\Desktop\git donwload\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.InicioUC.resources
+C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.PagosUC.resources
+C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.RutinasUC.resources
+C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.AgregarPago.resources
+C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.AgregarRutina.resources
+C:\Users\Midve\OneDrive\Documentos\GitHub\BroncoRepositorio\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
